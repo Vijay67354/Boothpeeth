@@ -2860,8 +2860,16 @@ input[type=time]::-webkit-clear-button {
 
 .custom-container {
     width: 90%;
-    margin: 0 auto
+    margin: 0 auto;
 }
+
+/* 460px and below → full width */
+@media (max-width: 460px) {
+    .custom-container {
+        width: 100%;
+    }
+}
+
 
 .individualhead {
     text-align: left;
